@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator, Square Iterator, and Prime Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculator GUI</h1>
+
+    <!-- Calculator Section -->
+    <section id="calculator">
+        <h2>Basic Calculator</h2>
+        <div class="calculator-grid">
+            <input type="text" id="num1" placeholder="0" class="calc-display" disabled>
+            <input type="text" id="num2" placeholder="0" class="calc-display" disabled>
+            <input type="text" id="operation" class="calc-display" disabled>
+
+            <div class="calc-buttons">
+                <button class="calc-btn">7</button>
+                <button class="calc-btn">8</button>
+                <button class="calc-btn">9</button>
+                <button class="calc-btn">/</button>
+                <button class="calc-btn">4</button>
+                <button class="calc-btn">5</button>
+                <button class="calc-btn">6</button>
+                <button class="calc-btn">*</button>
+                <button class="calc-btn">1</button>
+                <button class="calc-btn">2</button>
+                <button class="calc-btn">3</button>
+                <button class="calc-btn">-</button>
+                <button class="calc-btn">0</button>
+                <button class="calc-btn">C</button>
+                <button class="calc-btn">=</button>
+                <button class="calc-btn">+</button>
+            </div>
+
+            <p id="calcResult"></p>
+        </div>
+    </section>
+
+    <!-- Flexbox container for square and prime sections -->
+    <div id="additional-sections">
+        <!-- Square Iterator Section -->
+        <section id="square-iterator">
+            <h2>Square Iterator</h2>
+            <input type="text" id="numbers" placeholder="Enter numbers (comma-separated)">
+            <button id="squareButton">Generate Squares</button>
+            <p id="squareResult"></p>
+        </section>       
+        <!-- Prime Number Generator Section -->
+        <section id="prime-generator">
+            <h2>Prime Number Generator</h2>
+            <input type="number" id="primeLimit" placeholder="Enter limit for primes">
+            <button id="generatePrimes">Generate Primes</button>
+            <p id="primeResult"></p>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
